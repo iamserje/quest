@@ -376,14 +376,35 @@ a, a:visited, a:hover {
    margin-bottom: 76px;
 }
 .client__item input {
-   width: 256px;
+   width: 264px;
    height: 67px;
-   margin-left: 54px;
+   margin-left: 50px;
    font-size: 3rem;
    line-height: 3.6rem;
    letter-spacing: -1px;
    text-align: center;
+   border: 1px solid #000;
 }
-
+input[type="radio"] {
+   position: relative;
+   border: none;
+   appearance: none;
+}
+input[type="radio"]::after {
+   content: " Не Перезвонили";
+   display: inline-block;
+   position: absolute;
+   left: 0;
+   top: 24px;
+   width: 256px;
+   height: 67px;
+   padding-top: 10px;
+   background: #ffffff;
+   border: 1px solid #000;
+}
+input[type="radio"]:checked:after {
+   content: "Перезвонили";
+   background: #FFE504;
+}
 
 /* -------frame-5-clients-end------- */
