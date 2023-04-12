@@ -1,0 +1,389 @@
+@font-face {
+    font-family: 'Century';
+    src: url('./fonts/Century-Normal.woff2') format('woff2'),
+        url('./fonts/Century-Normal.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+*, *::before, *::after {
+   box-sizing: border-box;
+}
+
+html {
+   font-size: 10px;
+}
+
+body {
+   margin: 0;
+   font-family: 'Century', Georgia, 'Times New Roman', Times, serif;
+   font-style: normal;
+   font-weight: 400;
+   font-size: 2rem;
+   line-height: 2.4rem;
+   background: linear-gradient(88.98deg, #4196C9 1.47%, rgba(255, 255, 255, 0) 30.54%, rgba(255, 255, 255, 0) 73.56%, #4196C9 99.73%);
+}
+
+h1, h2, h3, p {
+   margin: 0;
+   padding: 0;
+}
+
+ul, li {
+   margin: 0;
+   padding: 0;
+	list-style: none;
+}
+a, a:visited, a:hover {
+   color: #000000;
+	text-decoration: none;
+}
+
+.sett {
+   max-width: 1340px;
+   margin: 0 auto;
+}
+
+.header-sett {
+   position: relative;
+}
+
+.link-admin {
+   position: absolute;
+   left: 0;
+   bottom: 0;
+   color: #ffffff;
+}
+.logo {
+   display: flex;
+   justify-content: center;
+}
+.logo__img {
+   display: block;
+}
+.zebra {
+   height: 36px;
+   background: url(./images/zebra.png);
+}
+
+.main {
+   padding-top: 114px;
+   padding-bottom: 60px;
+   background: url(./images/main-img.png) top/cover no-repeat;
+}
+
+.main-sett {
+   display: flex;
+   flex-direction: column;
+}
+
+.title {
+   align-self: flex-end;
+   text-align: center;
+   max-width: 580px;
+   font-size: 5rem;
+   line-height: 6rem;
+   color: #ffffff;
+   margin-bottom: 29px;
+}
+.main__bittons {
+   display: flex;
+   align-items: center;
+   gap: 172px;
+   justify-content: flex-end;
+   padding-right: 140px;
+}
+.two-buttons a:not(:last-child) {
+   margin-bottom: 37px;
+}
+.button {
+   display: block;
+   height: 61px;
+   padding: 0 35px;
+   text-align: center;
+   font-size: 3rem;
+   line-height: 5rem;
+   cursor: pointer;
+}
+.button_bordered {
+   font-weight: bold;
+   color: #ffffff;
+   border: 3px solid #ffffff;
+   border-radius: 30px;
+}
+
+.contacts {
+   padding: 60px 0;
+}
+
+.contacts-sett {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 70px;
+}
+
+.button_zebra {
+   width: 248px;
+   padding: 0;
+   color: #ffffff;
+   background: url(./images/zebra-btn.jpg) no-repeat;
+}
+.contacts__content {
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+}
+.map {
+   width: 539px;
+   background: #4196C9;
+}
+.map__img {
+   display: block;
+   width: 100%;
+}
+.contacts__data {
+   width: 473px;
+   margin-right: 120px;
+   text-align: center;
+}
+.contacts__data-item {
+   margin-bottom: 51px;
+   font-size: 3rem;
+   line-height: 3.6rem;
+}
+.contacts__data-item:last-child {
+   margin-bottom: 0;
+}
+
+.catalog {
+   padding-bottom: 16px;
+}
+
+.service {
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 50px;
+   gap: 20px;
+}
+.service__img {
+   width: 539px;
+}
+.service__img img {
+   display: block;
+   width: 100%;
+}
+.service__content {
+   max-width: 754px;
+}
+.service__title {
+   margin-bottom: 32px;
+   font-size: 3rem;
+   line-height: 3.6rem;
+}
+.service__descript {
+   margin-bottom: 12px;
+}
+.service__descript p {
+   padding-bottom: 30px;
+}
+
+.button_black {
+   display: inline-block;
+   border: 3px solid #000000;
+   border-radius: 30px;
+}
+
+.footer {
+   height: 36px;
+   background: url(./images/zebra.png);
+}
+
+/* ----------frame-2-quest--start---------- */
+.quest__content {
+   position: relative;
+   padding-top: 53px;
+}
+
+.back {
+   display: block;
+   position: absolute;
+   left: -60px;
+   top: 50px;
+   width: 30px;
+   height: 30px;
+   background: url(./images/back-arrow.svg);
+   transition: 0.2s;
+}
+.back:hover {
+   transform: scale(1.1);
+}
+/* ----------frame-2-quest--end---------- */
+
+/* ----------frame-4-edit-quest--start---------- */
+.add-foto {
+   padding-top: 16px;
+   text-align: center;
+}
+
+.add-foto__input {
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+
+.add-foto__label {
+   display: inline-block;
+   width: 299px;
+   background: url(./images/x.svg) no-repeat;
+   cursor: pointer;
+   height: 40px;
+   padding-top: 7px;
+}
+/* ----------frame-4-edit-quest--end---------- */
+
+/* ----------frame-3-admin--start---------- */
+.admin__sett {
+   display: flex;
+   justify-content: center;
+   align-items: flex-end;
+   gap: 46px;
+   transform: translateX(148px);
+}
+
+.button__little {
+   width: 193px;
+   height: 39px;
+   font-size: 2rem;
+   line-height: 3.4rem;
+}
+
+.admin__content {
+   position: relative;
+}
+.admin__content .back {
+   top: -100px;
+}
+
+.service__admin {
+   flex-direction: row-reverse;
+}
+
+.admin__button {
+   margin-right: 57px;
+}
+/* ----------frame-3-admin--end---------- */
+
+/* ----------frame-6-41-form--start---------- */
+.form__content {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: relative;
+   padding-top: 46px;
+   padding-bottom: 104px;
+}
+
+.form {
+   text-align: center;
+}
+
+.form__title {
+   margin-bottom: 64px;
+   text-align: center;
+}
+
+.form__item {
+   display: flex;
+   gap: 12px;
+   margin-bottom: 34px;
+}
+.form__item:last-child {
+   margin-bottom: 84px;
+}
+
+.form__label, .form__input {
+   display: inline-block;
+   width: 207px;
+   height: 71px;
+   font-size: 30px;
+   line-height: 36px;
+   background: #4397CA;
+   border: 1px solid #000000;
+}
+
+.form__label {
+   padding-top: 10px;
+}
+
+.form__input {
+   width: 437px;
+   padding-left: 10px;
+}
+.button__form {
+   width: 408px;
+   text-align: center;
+   margin-top: 84px;
+   background: transparent;
+}
+/* ----------frame-6-41-form--end---------- */
+
+/* --------popup-start------------ */
+.wrapper {
+   position: relative;
+}
+.popup {
+   display: none;
+   justify-content: center;
+   align-items: center;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background: transparent;
+}
+
+.popup__content {
+   display: flex;
+   align-items: center;
+   width: 886px;
+   height: 469px;
+   padding: 57px 85px;
+   text-align: center;
+   font-size: 4rem;
+   line-height: 4.8rem;
+   background: rgba(65, 150, 201, 0.9);
+}
+
+.popup-show {
+   display: flex;
+}
+/* --------popup--end----------- */
+
+/* -------frame-5-clients-start------- */
+.client {
+   text-align: center;
+   margin-bottom: 27px;
+   padding: 30px;
+   background: rgba(65, 150, 201, 0.39);
+   border: 1px solid #000000;
+}
+
+.client__item {
+   margin-bottom: 76px;
+}
+.client__item input {
+   width: 256px;
+   height: 67px;
+   margin-left: 54px;
+   font-size: 3rem;
+   line-height: 3.6rem;
+   letter-spacing: -1px;
+   text-align: center;
+}
+
+
+/* -------frame-5-clients-end------- */

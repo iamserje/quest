@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="../style.css">
+   <title>QUEST</title>
+</head>
+<body>
+<div class="wrapper">
+   <header class="header">
+      <div class="sett header-sett">
+         <div class="logo">
+            <img class="logo__img" src="../images/logo.png" alt="logo text">
+         </div>
+      </div>
+      <div class="zebra"></div>
+   </header>
+   <section class="catalog">
+      <div class="sett">
+         <div class="form__content">
+            <a class="back" href="../index.html"></a>
+            <form class="form">
+               <legend class="service__title form__title">Хочу записаться на квест</legend>
+               <div class="form__item">
+                  <label for="fname" class="form__label">Имя</label>
+                  <input type="text" class="form__input" id="fname" name="name">
+               </div>
+               <div class="form__item">
+                  <label for="ftel" class="form__label">Телефон</label>
+                  <input type="tel" class="form__input" id="ftel" name="phone">
+               </div>
+               <button class="button button_black button__form">Перезвоните мне</button>
+            </form>
+         </div>
+      </div>
+
+   </section>
+   <footer class="footer"></footer>
+   <div class="popup">
+      <p class="popup__content">В ближайшее время мы Вам перезвоним!)</p>
+   </div>
+</div>
+<script>
+   const button = document.querySelector('.button');
+   const popup = document.querySelector('.popup');
+   const form = document.querySelector('.form');
+   button.addEventListener('click', (e) => {
+      e.preventDefault();
+      popup.classList.add('popup-show');
+   })
+   popup.addEventListener('click', () => {
+      popup.classList.remove('popup-show');
+   })
+</script>
+</body>
+</html>
