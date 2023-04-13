@@ -250,7 +250,7 @@ a, a:visited, a:hover {
    justify-content: center;
    align-items: flex-end;
    gap: 46px;
-   transform: translateX(148px);
+   transform: translateX(115px);
 }
 
 .button__little {
@@ -364,6 +364,7 @@ a, a:visited, a:hover {
 /* --------popup--end----------- */
 
 /* -------frame-5-clients-start------- */
+/* -------frame-40-change-client-start------- */
 .client {
    text-align: center;
    margin-bottom: 27px;
@@ -391,7 +392,7 @@ input[type="radio"] {
    appearance: none;
 }
 input[type="radio"]::after {
-   content: " Не Перезвонили";
+   content: "Перезвонили";
    display: inline-block;
    position: absolute;
    left: 0;
@@ -403,8 +404,16 @@ input[type="radio"]::after {
    border: 1px solid #000;
 }
 input[type="radio"]:checked:after {
-   content: "Перезвонили";
    background: #FFE504;
 }
 
+input[value="Не перезвонили"]::after {
+   content: "Не перезвонили";
+}
+
+.change-client__sett {
+   display: flex;
+   justify-content: center;
+}
+/* -------frame-40-change-client-end------- */
 /* -------frame-5-clients-end------- */
