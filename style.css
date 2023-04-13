@@ -35,7 +35,7 @@ ul, li {
    padding: 0;
 	list-style: none;
 }
-a, a:visited, a:hover {
+a {
    color: #000000;
 	text-decoration: none;
 }
@@ -87,7 +87,7 @@ a, a:visited, a:hover {
    color: #ffffff;
    margin-bottom: 29px;
 }
-.main__bittons {
+.main__buttons {
    display: flex;
    align-items: center;
    gap: 172px;
@@ -193,6 +193,7 @@ a, a:visited, a:hover {
    display: inline-block;
    border: 3px solid #000000;
    border-radius: 30px;
+   background: transparent;
 }
 
 .footer {
@@ -241,6 +242,22 @@ a, a:visited, a:hover {
    cursor: pointer;
    height: 40px;
    padding-top: 7px;
+}
+
+.service__inputs input, .service__inputs textarea {
+   font-size: 2rem;
+   line-height: 2.4rem;
+   background: transparent;
+   border: none;
+}
+
+.service__inputs textarea {
+   width: 754px;
+   resize: none;
+}
+
+.service__inputs input {
+   width: 515px;
 }
 /* ----------frame-4-edit-quest--end---------- */
 
@@ -364,6 +381,42 @@ a, a:visited, a:hover {
 /* --------popup--end----------- */
 
 /* -------frame-5-clients-start------- */
+.client {
+   text-align: center;
+   margin-bottom: 27px;
+   padding: 30px;
+   background: rgba(65, 150, 201, 0.39);
+   border: 1px solid #000000;
+}
+
+.client__item {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 76px;
+}
+.client__item div {
+   width: 264px;
+   height: 67px;
+   margin-left: 50px;
+   font-size: 3rem;
+   line-height: 5rem;
+   letter-spacing: -1px;
+   text-align: center;
+   background: #ffffff;
+   border: 1px solid #000;
+}
+
+div.checked {
+   background: #FFE504;
+}
+
+.change-client__sett {
+   display: flex;
+   justify-content: center;
+}
+/* -------frame-5-clients-end------- */
+
 /* -------frame-40-change-client-start------- */
 .client {
    text-align: center;
@@ -384,7 +437,7 @@ a, a:visited, a:hover {
    line-height: 3.6rem;
    letter-spacing: -1px;
    text-align: center;
-   border: 1px solid #000;
+   border: 1px solid #000000;
 }
 input[type="radio"] {
    position: relative;
@@ -396,7 +449,7 @@ input[type="radio"]::after {
    display: inline-block;
    position: absolute;
    left: 0;
-   top: 24px;
+   top: 0;
    width: 256px;
    height: 67px;
    padding-top: 10px;
@@ -416,4 +469,3 @@ input[value="Не перезвонили"]::after {
    justify-content: center;
 }
 /* -------frame-40-change-client-end------- */
-/* -------frame-5-clients-end------- */
