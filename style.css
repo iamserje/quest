@@ -107,6 +107,7 @@ a {
    cursor: pointer;
 }
 .button_bordered {
+   width: 248px;
    font-weight: bold;
    color: #ffffff;
    border: 3px solid #ffffff;
